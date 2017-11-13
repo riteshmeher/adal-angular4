@@ -1,0 +1,6 @@
+<h2 *ngIf="!service.userInfo.authenticated">Redirecting to Secure Login </h2>
+
+<div *ngIf="service.userInfo.authenticated">
+  
+  <button (click)="redirectStuff()">Redirect to ADAL Page</button>
+</div>
